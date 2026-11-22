@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0b0b12">
+<title>One UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs id="svgdefs"></defs></svg>
+
+<main id="stage">
+  <div id="device">
+    <div id="screen" data-theme="light" data-scene="lock" data-wp="0">
+
+      <div id="wallpaper"><i></i><i></i><i></i><i></i></div>
+      <div id="dim"></div>
+
+      <!-- status bar + camera cutout / live activity -->
+      <header id="status">
+        <span id="sbTime">10:42</span>
+        <span class="sbr">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M3 18h3v3H3zM8.5 14h3v7h-3zM14 9.500h3V21h-3zM19.500 4H22v17h-2.500z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" width="16" height="16"><path d="M3 9a14 14 0 0 1 18 0M6 12.500a9.500 9.500 0 0 1 12 0M9 16a5 5 0 0 1 6 0"/></svg>
+          <span class="batt"><b></b></span><small>82%</small>
+        </span>
+      </header>
+      <div id="isl" data-s="" data-k="music" data-v="">
+        <div class="gl glass"></div>
+        <div class="glow"></div>
+        <div class="v v-mm">
+          <div class="art" data-m="art"></div>
+          <div class="eq"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="v v-fm">
+          <div class="art" data-m="art"></div>
+          <div class="meta"><b data-m="title">—</b><span data-m="artist">—</span></div>
+          <div class="eq"><i></i><i></i><i></i><i></i></div>
+          <div class="bar"><u data-m="bar"></u></div>
+          <div class="times"><span data-m="cur">0:00</span><span data-m="dur">0:00</span></div>
+          <div class="ctrls"><button data-act="prev"></button><button data-act="play"></button><button data-act="next"></button></div>
+        </div>
+        <div class="v v-mt"><div class="tm"><span class="rg tmRg"></span><b class="tmT">5:00</b></div></div>
+        <div class="v v-ft"><div class="tm"><span class="rg tmRg"></span><b class="tmT">5:00</b><button class="stop" id="tmStop">Stop</button></div></div>
+        <div class="v v-pk"><div class="msg"><span class="av" id="iAv">M</span><div><b id="iWho">Mina</b><span id="iTxt"></span></div></div></div>
+      </div>
+
+      <!-- home -->
+      <section id="home">
+        <div id="pages"></div>
+        <div id="dots"></div>
+        <nav id="dock" class="glass lens"></nav>
+      </section>
+
+      <!-- app windows -->
+      <section id="appLayer"></section>
+
+      <!-- quick panel -->
+      <div id="panelBg"></div>
+      <section id="panel">
+        <div class="pin">
+          <div class="phead">
+            <div><b id="pTime">10:42</b><span id="pDate"></span></div>
+            <div class="pbtns"><button class="glass round" data-p="theme"></button><button class="glass round" data-p="settings"></button><button class="glass round" data-p="power"></button></div>
+          </div>
+          <div class="tiles" id="tiles"></div>
+          <div class="glass lens slider big" id="bright"><div class="fill"></div><span class="sico"></span><div class="knob glass"></div></div>
+          <div class="glass media" id="pMedia">
+            <div class="art" data-m="art"></div>
+            <div class="meta"><b data-m="title">—</b><span data-m="artist">—</span><div class="bar"><u data-m="bar"></u></div></div>
+            <div class="mc"><button data-act="prev"></button><button data-act="play"></button><button data-act="next"></button></div>
+          </div>
+          <div class="nhead"><b>Notifications</b><button id="clearAll">Clear</button></div>
+          <div id="pNotifs"></div>
+        </div>
+        <div class="handle"></div>
+      </section>
+
+      <!-- lock -->
+      <section id="lock">
+        <div class="lk-top"><span class="lk-ic" id="lkIc"></span><div class="lk-date" id="lkDate"></div><div class="lk-time" id="lkTime">10:42</div></div>
+        <div id="lkNotifs"></div>
+        <div class="lk-bot">
+          <button class="glass round big" data-lk="phone"></button>
+          <span class="lk-hint">Swipe up to unlock</span>
+          <button class="glass round big" data-lk="camera"></button>
+        </div>
+      </section>
+
+      <div id="gesture"><span></span></div>
+    </div>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
